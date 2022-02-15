@@ -34,3 +34,43 @@ namespace TetsForMethods
 
     }
 }
+
+REF 
+
+namespace TetsForMethods
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            int[] grades = { 70, 65, 100, 90, 30, 95, 40 };
+            int studs=0;
+            int result = subs(grades, ref studs);
+            int orta = average(result, studs);
+            Console.WriteLine(orta);
+
+
+        }
+        public static int subs(int[] grades, ref int studs)
+        {
+            int result = 0;
+            studs = grades.Length;
+
+            foreach (int grade in grades)
+            {
+                result += grade;
+
+            }
+            return result;
+        }
+        public static int average(int result, int studs)
+        {
+           
+            int orta = result / studs;
+            return orta;
+
+
+        }
+
+    }
+}
