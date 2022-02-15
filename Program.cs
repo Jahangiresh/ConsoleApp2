@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +8,7 @@ namespace TetsForMethods
 {
     class Program
     {
-        //public static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //int[] grades = { 70, 65, 100, 90, 30, 95, 40 };
 
@@ -19,10 +19,16 @@ namespace TetsForMethods
 
             //Console.WriteLine(result);
 
-            //int grades = 490;
-            //int studs = 7;
-            //out int orta = average(orta);
-            //global::System.Console.WriteLine(orta);
+            int grades = 490;
+           
+            
+            int bal = average(grades);
+
+            Console.WriteLine(bal);
+
+
+
+
 
 
         }
@@ -38,12 +44,13 @@ namespace TetsForMethods
         //    }
         //    return result;
         //}
-        public static int average(int studs, int grades)
+        public static int average( int grades)
         {
-        int total = 490;
-        int st = 7;
-        int orta = total / st;
-        global::System.Console.WriteLine(orta);
+            int studs = 7;
+            int orta =grades/studs;
+             return orta;
+            
+            
         }
 
     }
