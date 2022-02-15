@@ -1,53 +1,50 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//static void checkNumberIfNumberDevidedSeven(int num)
-//{
-//    int q = num % 7;
-//    int t = 7 - q;
-//    if (q == 0)
-//    {
-//        Console.WriteLine("divided by 7");
-//    }
-//    else if (q <= 3)
-//    {
-//        num -= q;
-//        Console.WriteLine(num);
-//    }
-//    else
-//    {
-//        num += t;
-//        Console.WriteLine(num);
-//    }
-//}
+namespace TetsForMethods
+{
+    class Program
+    {
+        //public static void Main(string[] args)
+        {
+            //int[] grades = { 70, 65, 100, 90, 30, 95, 40 };
 
 
-//int number =Convert.ToInt32(Console.ReadLine());
+            //int result = subs(grades);
 
-//checkNumberIfNumberDevidedSeven(number);
 
-//static void SimpleMath(int num1,char arithmetics, int num2)
-//{
 
-//    int result = 0;
+            //Console.WriteLine(result);
 
-//    switch (arithmetics)
-//    {
-//        case '*':
-//            result = num1 * num2;
-//            break;
-//        case '/':
-//            result = num1 / num2;
-//            break;
-//        case '-':
-//            result = num1 - num2;
-//            break;
-//        case '+':
-//            result = num1 + num2;
-//            break;
-//    }
-//    Console.WriteLine(result);
-//}
-//int num1 = Convert.ToInt32(Console.ReadLine());
-//char arithmetics = Convert.ToChar(Console.ReadLine());
-//int num2 = Convert.ToInt32(Console.ReadLine());
-//SimpleMath(num1, arithmetics, num2);
+            //int grades = 490;
+            //int studs = 7;
+            //out int orta = average(orta);
+            //global::System.Console.WriteLine(orta);
+
+
+        }
+        //public static int subs(int[] grades)
+        //{
+        //    int result = 0;
+        //    int studs = 0;
+
+        //    foreach (int grade in grades)
+        //    {
+        //        result += grade;
+        //        studs++;
+        //    }
+        //    return result;
+        //}
+        public static int average(int studs, int grades)
+        {
+        int total = 490;
+        int st = 7;
+        int orta = total / st;
+        global::System.Console.WriteLine(orta);
+        }
+
+    }
+}
