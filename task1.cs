@@ -6,7 +6,13 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            string a = "C SHarp";
+            string a = Convert.ToString(Console.ReadLine());
+            upperlower(a);
+            Console.WriteLine(upperlower(a));
+        }
+        public static string upperlower(string a)
+        { 
+        
             string bb = "";
 
             for (int i = 0; i < a.Length; i++)
@@ -22,8 +28,9 @@ namespace ConsoleApp2
 
                 }
 
-            }
-            Console.WriteLine(bb);
+            }return bb;
+           
+            
         }
     }
 }
