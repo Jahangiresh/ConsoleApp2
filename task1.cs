@@ -6,7 +6,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            string a = "C SHarp Sucks";
+            string a = "C SHarp";
             string bb = "";
 
             for (int i = 0; i < a.Length; i++)
