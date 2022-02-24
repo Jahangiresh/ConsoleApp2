@@ -1,76 +1,20 @@
-namespace TetsForMethods
+﻿namespace ConsoleApp6
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            int[] grades = { 70, 65, 100, 90, 30, 95, 40 };
-            int studs;
-            int result = subs(grades, out studs);
-            int orta = average(result, studs);
-            Console.WriteLine(orta);
+            ;
+
+            Console.WriteLine("write student fullname");
+            Student student = new Student();
+
+            Console.WriteLine("qrup adi");
+            student.groupno = Console.ReadLine();
+
+            Console.WriteLine(student.GroupNo);
 
 
         }
-        public static int subs(int[] grades, out int studs)
-        {
-            int result = 0;
-            studs = grades.Length;
-
-            foreach (int grade in grades)
-            {
-                result += grade;
-
-            }
-            return result;
-        }
-        public static int average(int result, int studs)
-        {
-            int orta = result / studs;
-            return orta;
-
-
-        }
-
-    }
-}
-
-//REF 
-
-namespace TetsForMethods
-{
-    class Program
-    {
-        public static void Main(string[] args)
-        {
-            int[] grades = { 70, 65, 100, 90, 30, 95, 40 };
-            int studs=0;
-            int result = subs(grades, ref studs);
-            int orta = average(result, studs);
-            Console.WriteLine(orta);
-
-
-        }
-        public static int subs(int[] grades, ref int studs)
-        {
-            int result = 0;
-            studs = grades.Length;
-
-            foreach (int grade in grades)
-            {
-                result += grade;
-
-            }
-            return result;
-        }
-        public static int average(int result, int studs)
-        {
-           
-            int orta = result / studs;
-            return orta;
-
-
-        }
-
     }
 }
